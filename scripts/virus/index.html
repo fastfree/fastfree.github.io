@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+<title>Virus!</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+  body {
+    font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+    font-size: 62.5%;
+}
+
+</script>
+<script>
+  $(function() {
+    $( "#dialog1" ).dialog();
+  });
+</script>
+<style type="text/css">
+
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+
+</style>
+<script type="text/javascript" language="javascript">
+
+window.setTimeout(func1, 22000);
+window.setTimeout(func2, 22000);
+window.setTimeout(func3, 24000);
+window.setTimeout(func4, 24000);
+window.setTimeout(func5, 25000);
+window.setTimeout(func6, 25000);
+function func1()
+{
+	document.getElementById("upload").className="show";
+}
+function func2()
+{
+	document.getElementById("search").className="hide";
+}
+function func3()
+{
+	document.getElementById("start").className="show";
+}
+function func4()
+{
+	document.getElementById("upload").className="hide";
+}
+function func5()
+{
+	document.getElementById("finish").className="show";
+}
+function func6()
+{
+	document.getElementById("start").className="hide";
+}
+</script>
+</head>
+<body>
+<div id="dialog1" title="Virus">
+<div id="search">
+<p>Searching Virus...</p>
+<img src="virus_loading.gif" />
+</div>
+<div id="upload" hidden>
+<p>uploading virus...</p>
+<img src="virus_upload.gif" />
+</div>
+<div id="start" hidden>
+<p>starting virus...</p>
+<img src="virus_start.gif" />
+</div>
+<div id="finish" hidden>
+<h1>Now Your Computer Has A Virus!</h1>
+</div>
+</div>
+</body>
+</html>
