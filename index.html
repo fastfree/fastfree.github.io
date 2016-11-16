@@ -54,43 +54,25 @@ border-width:3px;
 }
 </style>
 <script type="text/javascript" language="javascript">
-function showhome()
+function showdownload()
 {
-document.getElementById("home").className="show";
-document.getElementById("scripts").className="hide";
-}
-function showscripts()
-{
-document.getElementById("scripts").className="show";
-document.getElementById("home").className="hide";
+document.getElementById("download").className="show";
 }
 </script>
     </head>
     <body>
 <ul>
   <li><a href="#" onclick="showhome()">Home</a></li>
-  <li><a href="#" onclick="showscripts()">Web Scripts</a></li>
-  <li><a href="https://fastfree.cf/videos/music.html">Music</a></li>
+  <li><a href="https://fastfree.github.io/archive/">Versions Archive</a></li>
 </ul>
 <p></p>
-<div id="notice"><p> <strong>Notice:</strong> <i>We're moving from 2freehosting to 888webhost because there are some issues and downtime. Please have patience.</i><span id="close" style="float:right;">x</span></p>
+<div id="notice" hidden><p> <strong>Notice:</strong> <i>Please have patience.</i><span id="close" style="float:right;">x</span></p>
 </div>
-        <div class="container">
-<div id="home">
 <h2>What's the story of FastFree?</h2>
-<p>I've created a program called "FFP"</p>
-</div>
-<div id="scripts" hidden>
-<table>
-<tr><th><h1>view</h1></th><th><h1>name & description</h1></th><th><h1>link</h1></th></tr>
-<tr><th> <img src="img/site_permserror.png" height="250px" width="350px" /> </th><th><h2>Permissions error</h2><h3>Perfect for privacy</h3></th><th><a href="scripts/permserror/">view</a></th></tr>
-<tr><th><img src="img/site_terminal.png" height="250px" width="350px" /></th><th><h2>L.JS.W.OS.IB.S.</h2><h3>JavaScript Web Operative System In-Browser Shell</h3></th><th><a href="scripts/terminal/">view</a></th></tr>
-<tr><th><img src="img/site_virus.png" height="250px" width="350px" /></th><th><h2>Virus</h2><h3>Uploading to your computer...Perfect for pranks</h3></th><th><a href="scripts/virus/">view</a></th></tr>
-<tr><th><font color="red" size="+2">Currently Unavailable</font></th><th><h2>Fake Antivirus</h2><h3>Scanning... You have a lot of viruses!</h3></th><th><a href="scripts/fakeav/">view</a></th></tr>
-</table>
-</div>
-</div>
-<h3>This site is secure. Security scan by:<a href="https://sitecheck.sucuri.net/results/fastfree.cf">Sucuri</a>, <a href="http://threatcenter.crdf.fr/?q=fastfree.cf&Search=VirusName&Submit=Search">CRDF Threat Center</a>, <a href="http://trafficlight.bitdefender.com/info?url=https%3A%2F%2Ffastfree.cf%2F&language=en_US">BitDefender TrafficLight</a>, <a href="http://www.siteadvisor.com/sites/fastfree.cf">McAfee SiteAdvisor</a>, <a href="http://www.avgthreatlabs.com/it-it/website-safety-reports/domain/fastfree.cf">AVG Threat Labs</a>, <a href="https://www.virustotal.com/it/url/00d08a7da640e8478c253b6ea09d8ac43e515596599c4fc943fbdf77afb9fd0f/analysis/">VirusTotal</a> and <a href="https://global.sitesafety.trendmicro.com">TrendMicro</a></h3>
-</div>
+            <p>Download:</p>
+            <a onclick="showdownload"><input type="checkbox" />I do not redistribute or publish this program by any means</a>
+        <div id="download">
+            <a href="https://fastfree.github.io/FFP.zip"><input type="button" value="Download FFP" /></a>
+        </div>
     </body>
   </html>
